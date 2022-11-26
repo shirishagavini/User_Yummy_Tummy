@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Yummy Tummy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_user_name">Enter Username</string>
+    <string name="phone_number">Enter Phone Number</string>
+    <string name="pincode">Enter Pincode</string>
+    <string name="nearest_landmark">Nearest Landmark</string>
+    <string name="save">Save</string>
+    <string name="title_activity_auxilary">Auxilary</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="yummy_tummy">Yummy Tummy</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

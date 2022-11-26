@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="9dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/menu_background"
+    android:elevation="15dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="@dimen/_58sdp"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/event_list_date_bg"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <ImageView
+            android:id="@+id/itemImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/food_display"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/foodTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Pepsi(500ml)"
+        android:maxLength="8"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/rsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="28dp"
+        android:text="£"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/foodTextView"
+        app:layout_constraintTop_toBottomOf="@id/foodTextView" />
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="150"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/rsTextView"
+        app:layout_constraintTop_toBottomOf="@id/foodTextView" />
+
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/quant_bg"
+        app:layout_constraintEnd_toEndOf="@id/quantity_background"
+        app:layout_constraintStart_toStartOf="@id/quantity_background"
+        app:layout_constraintTop_toTopOf="@id/foodTextView" />
+
+    <LinearLayout
+        android:id="@+id/quantity_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/quant_bg"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkbox">
+
+
+        <ImageView
+            android:id="@+id/minusButtonImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:paddingStart="10dp"
+            android:src="@drawable/minus" />
+
+
+        <TextView
+            android:id="@+id/quantityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text="0"
+            android:textColor="@color/end_color"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/plusButtonImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:paddingEnd="10dp"
+            android:src="@drawable/plus" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
