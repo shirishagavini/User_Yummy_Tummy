@@ -9,6 +9,9 @@
         android:id="@+id/logoImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:src="@drawable/restaurant_logo"
         app:layout_constraintBottom_toTopOf="@+id/splashImageView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,13 +29,15 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="109dp"
         android:text="Yummy Tummy"
         android:textColor="#3F51B5"
-        android:layout_marginTop="25dp"
-        android:textStyle="bold"
         android:textSize="40dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/splashImageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logoImageView"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoImageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

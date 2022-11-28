@@ -23,10 +23,11 @@ public class    ClientDetails {
     public ClientDetails(String name, String phone, String pincode, String address, String state, String landmark) {
         this.name = name;
         this.phone = phone;
-        this.pincode = pincode;
         this.address = address;
-        this.state = state;
+        this.pincode = pincode;
         this.landmark = landmark;
+        this.state = state;
+
     }
 
     @Override
@@ -34,10 +35,10 @@ public class    ClientDetails {
         return "ClientDetails{" +
                 "name='" + name + '\'' +
                 ", phone='" + phone + '\'' +
-                ", pincode='" + pincode + '\'' +
                 ", address='" + address + '\'' +
-                ", state='" + state + '\'' +
+                ", pincode='" + pincode + '\'' +
                 ", landmark='" + landmark + '\'' +
+                ", state='" + state + '\'' +
                 ", walletBalance=" + walletBalance +
                 '}';
     }
@@ -58,6 +59,14 @@ public class    ClientDetails {
         this.phone = phone;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     public String getPincode() {
         return pincode;
     }
@@ -66,12 +75,12 @@ public class    ClientDetails {
         this.pincode = pincode;
     }
 
-    public String getAddress() {
-        return address;
+    public String getLandmark() {
+        return landmark;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setLandmark(String landmark) {
+        this.landmark = landmark;
     }
 
     public String getState() {
@@ -82,11 +91,5 @@ public class    ClientDetails {
         this.state = state;
     }
 
-    public String getLandmark() {
-        return landmark;
-    }
 
-    public void setLandmark(String landmark) {
-        this.landmark = landmark;
-    }
 }

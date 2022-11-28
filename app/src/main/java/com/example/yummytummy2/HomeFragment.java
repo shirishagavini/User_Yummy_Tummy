@@ -76,10 +76,12 @@ public class HomeFragment extends BaseFragment {
                                 recyclerView.setAdapter(adapter);
                             }
                         })
-                        .addOnFailureListener(new OnFailureListener() {
+                        .addOnFailureListener(new OnFailureListener()
+                        {
                             @SuppressLint("SetTextI18n")
                             @Override
-                            public void onFailure(@NonNull Exception e) {
+                            public void onFailure(@NonNull Exception e)
+                            {
                                 title.setText("No Resturant is Availble in your area");
                             }
                         });
@@ -115,9 +117,11 @@ public class HomeFragment extends BaseFragment {
                 .document(currResturant.getResturantId())
                 .collection(currResturant.getResturantId())
                 .get()
-                .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+                .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>()
+                {
                     @Override
-                    public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+                    public void onSuccess(QuerySnapshot queryDocumentSnapshots)
+                    {
                         menuItems = queryDocumentSnapshots.toObjects(MenuItemClass.class);
                         Log.e("manan",menuItems.toString());
 //                        casting the menuitem document into the menuitem class
@@ -132,7 +136,8 @@ public class HomeFragment extends BaseFragment {
                 });
 
 //        setting up the add to cart button in the bottom sheet
-        addToCart.setOnClickListener(new View.OnClickListener() {
+        addToCart.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View view) {
                 for(int i=0;i<menuItems.size();i++){
