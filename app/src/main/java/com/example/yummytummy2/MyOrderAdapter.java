@@ -13,26 +13,30 @@ import java.sql.Timestamp;
 import java.util.Date;
 import java.util.List;
 
-public class MyOrderAdapter extends RecyclerView.Adapter<MyOrderAdapter.ViewHolder> {
+public class MyOrderAdapter extends RecyclerView.Adapter<MyOrderAdapter.ViewHolder>
+{
     List<MyOrderDetails> list;
     Context context;
 
 
-    public MyOrderAdapter(List<MyOrderDetails> list, Context context) {
+    public MyOrderAdapter(List<MyOrderDetails> list, Context context)
+    {
         this.list = list;
         this.context = context;
     }
 
     @NonNull
     @Override
-    public MyOrderAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public MyOrderAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
+    {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.myorderitem,parent,false);
         return new ViewHolder(view);
     }
 
     @SuppressLint("SetTextI18n")
     @Override
-    public void onBindViewHolder(@NonNull MyOrderAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MyOrderAdapter.ViewHolder holder, int position)
+    {
         MyOrderDetails currEle = list.get(position);
         holder.itemName.setText(currEle.getItemName());
         int total = currEle.getPrice()* currEle.getQuantity();
@@ -49,9 +53,11 @@ public class MyOrderAdapter extends RecyclerView.Adapter<MyOrderAdapter.ViewHold
         return list.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener
+    {
         public TextView orderId,paymentMode,orderDate,cost,itemName;
-        public ViewHolder(@NonNull View itemView) {
+        public ViewHolder(@NonNull View itemView)
+        {
             super(itemView);
             orderId = itemView.findViewById(R.id.orderIdNumberTextView);
             paymentMode = itemView.findViewById(R.id.modeTextView);
@@ -61,7 +67,8 @@ public class MyOrderAdapter extends RecyclerView.Adapter<MyOrderAdapter.ViewHold
         }
 
         @Override
-        public void onClick(View view) {
+        public void onClick(View view)
+        {
         }
     }
 }

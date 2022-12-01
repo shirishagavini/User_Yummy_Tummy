@@ -22,10 +22,12 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.List;
 
-public class UserFormFragment extends BaseFragment {
+public class UserFormFragment extends BaseFragment
+{
 
 
-    public UserFormFragment() {
+    public UserFormFragment()
+    {
         // Required empty public constructor
     }
 
@@ -42,8 +44,8 @@ public class UserFormFragment extends BaseFragment {
 
         nameTextView = (EditText)view.findViewById(R.id.namedittext);
         phoneTextView = (EditText)view.findViewById(R.id.phoneEdittext);
-        pincodeTextView = (EditText)view.findViewById(R.id.pincodeEdittext);
         addressTextView = (EditText)view.findViewById(R.id.addressEdittext);
+        pincodeTextView = (EditText)view.findViewById(R.id.pincodeEdittext);
         stateTextView = (EditText)view.findViewById(R.id.stateEdittext);
         landmarkTextView = (EditText)view.findViewById(R.id.landmarkEdittext);
 
@@ -54,8 +56,8 @@ public class UserFormFragment extends BaseFragment {
 //              getting the data from the edittext and converting them into the string
                 name = nameTextView.getText().toString();
                 phone = phoneTextView.getText().toString();
-                pincode = pincodeTextView.getText().toString();
                 address = addressTextView.getText().toString();
+                pincode = pincodeTextView.getText().toString();
                 state = stateTextView.getText().toString();
                 landmark = landmarkTextView.getText().toString();
 //                checking if the field provided are not empty

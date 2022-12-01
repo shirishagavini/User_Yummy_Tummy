@@ -49,13 +49,15 @@ public class ResturantAdapter extends RecyclerView.Adapter<ResturantAdapter.View
         return list.size();
     }
 
-    public boolean onLongClickListner(View.OnLongClickListener longClickListener){
+    public boolean onLongClickListner(View.OnLongClickListener longClickListener)
+    {
         this.longClickListener = longClickListener;
         return true;
     }
 
     @Override
-    public boolean onLongClick(View view) {
+    public boolean onLongClick(View view)
+    {
         longClickListener.onLongClick(view);
         return true;
     }
@@ -63,7 +65,8 @@ public class ResturantAdapter extends RecyclerView.Adapter<ResturantAdapter.View
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener,View.OnLongClickListener{
         public TextView resturantName,rattings;
         public ImageView profileImage;
-        public ViewHolder(@NonNull View itemView) {
+        public ViewHolder(@NonNull View itemView)
+        {
             super(itemView);
             resturantName = itemView.findViewById(R.id.foodTextView);
             rattings = itemView.findViewById(R.id.contentTextView);
@@ -76,7 +79,8 @@ public class ResturantAdapter extends RecyclerView.Adapter<ResturantAdapter.View
         }
 
         @Override
-        public void onClick(View view) {
+        public void onClick(View view)
+        {
 
         }
     }
