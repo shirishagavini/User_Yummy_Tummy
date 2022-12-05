@@ -18,9 +18,11 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.List;
 
-public class MyDetailsFragment extends BaseFragment {
+public class MyDetailsFragment extends BaseFragment
+{
 
-    public MyDetailsFragment() {
+    public MyDetailsFragment()
+    {
         // Required empty public constructor
     }
     protected EditText mYuserName, mYphoneuNumber, mYpincode, mYstate, mYaddress, mYlandmark;
@@ -30,8 +32,7 @@ public class MyDetailsFragment extends BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-//        this fragment is meant for displaying the details of the customer in the app
+
         view = inflater.inflate(R.layout.fragment_my_details, container, false);
 
         mYuserName = view.findViewById(R.id.namedittext);
@@ -58,7 +59,8 @@ public class MyDetailsFragment extends BaseFragment {
                 mYaddress.setText(Details.getAddress());
                 mYlandmark.setText(Details.getLandmark());
             }
-        }).addOnFailureListener(new OnFailureListener() {
+        }).addOnFailureListener(new OnFailureListener()
+        {
             @Override
             public void onFailure(@NonNull Exception e){
 

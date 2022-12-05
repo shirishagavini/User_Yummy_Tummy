@@ -2,7 +2,8 @@ package com.example.yummytummy2;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class MenuItemClass {
+public class MenuItemClass
+{
     String itemName,itemId,resId ;
     int price,quantity;
     String url = "";
@@ -24,7 +25,8 @@ public class MenuItemClass {
         isAdded = added;
     }
 
-    public MenuItemClass(String itemName, String itemId, int price,String url) {
+    public MenuItemClass(String itemName, String itemId, int price,String url)
+    {
         this.itemName = itemName;
         this.itemId = itemId;
         this.price = price;
@@ -56,7 +58,8 @@ public class MenuItemClass {
         this.resId = resId;
     }
 
-    public MenuItemClass(String itemName, String itemId, int price, int quantity, boolean isAdded) {
+    public MenuItemClass(String itemName, String itemId, int price, int quantity, boolean isAdded)
+    {
         this.itemName = itemName;
         this.itemId = itemId;
         this.price = price;
@@ -64,7 +67,8 @@ public class MenuItemClass {
         this.isAdded = isAdded;
     }
 
-    public MenuItemClass() {
+    public MenuItemClass()
+    {
     }
 
     public String getItemName() {
@@ -84,7 +88,8 @@ public class MenuItemClass {
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "MenuItemClass{" +
                 "itemName='" + itemName + '\'' +
                 ", itemId='" + itemId + '\'' +
