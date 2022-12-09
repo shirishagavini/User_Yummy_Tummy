@@ -26,7 +26,8 @@ import com.google.firebase.firestore.QuerySnapshot;
 import java.util.Arrays;
 import java.util.List;
 
-public class LoginFragment extends BaseFragment {
+public class LoginFragment extends BaseFragment
+{
     public LoginFragment() {
         // Required empty public constructor
     }
@@ -34,8 +35,7 @@ public class LoginFragment extends BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        //        Setting up the layout on the fragemnet
+
         AppCompatButton loginButton;
         view =  inflater.inflate(R.layout.fragment_login, container, false);
         loginButton = view.findViewById(R.id.loginButton);
@@ -66,13 +66,13 @@ public class LoginFragment extends BaseFragment {
         currUser = FirebaseAuth.getInstance().getCurrentUser();
         if(requestCode == 95400){
             if(resultCode == Activity.RESULT_OK){
-//              Checking the user has first timmed loggin in or in the second time
+
                 if(currUser.getMetadata().getCreationTimestamp() <= currUser.getMetadata().getLastSignInTimestamp() && currUser.getMetadata().getCreationTimestamp()+5 >= currUser.getMetadata().getLastSignInTimestamp()){
                     //                  Getting the user id.
                     String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
                     try{
                         FirebaseFirestore.getInstance().collection("Users").document(currUserID).collection("Details").get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-//                          Setting the  user and its details for filling up the form
+
                             @Override
                             public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
                                 List<UserData> details = queryDocumentSnapshots.toObjects(UserData.class);

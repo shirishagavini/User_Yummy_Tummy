@@ -3,22 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/activity_basic_login.xml" value="0.31354166666666666" />
+        <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/activity_dash_board.xml" value="0.31354166666666666" />
+        <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/activity_main.xml" value="0.31354166666666666" />
         <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/activity_maps.xml" value="0.20555555555555555" />
         <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/cart_item.xml" value="0.20555555555555555" />
+        <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/dashboard_side_navigation.xml" value="0.31354166666666666" />
         <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/fragment_base.xml" value="0.20555555555555555" />
         <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/fragment_cart.xml" value="0.20555555555555555" />
+        <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/fragment_home.xml" value="0.31354166666666666" />
         <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/fragment_login.xml" value="0.31354166666666666" />
         <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/fragment_maps.xml" value="0.20555555555555555" />
         <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/fragment_my_details.xml" value="0.31354166666666666" />
         <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/fragment_my_orders.xml" value="0.20555555555555555" />
+        <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/fragment_my_wallet.xml" value="0.31354166666666666" />
         <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/fragment_nearby.xml" value="0.20555555555555555" />
         <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/fragment_notification_fragement.xml" value="0.20555555555555555" />
+        <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/fragment_profile.xml" value="0.31354166666666666" />
         <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/fragment_splash.xml" value="0.20555555555555555" />
+        <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/fragment_user_form.xml" value="0.31354166666666666" />
+        <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/menu_sheet.xml" value="0.31354166666666666" />
         <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/myorderitem.xml" value="0.20555555555555555" />
         <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/nearby.xml" value="0.20555555555555555" />
         <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/notification_layout.xml" value="0.20555555555555555" />
         <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/res_item.xml" value="0.20555555555555555" />
         <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/layout/side_navigation_header.xml" value="0.20555555555555555" />
+        <entry key="..\:/Users/SIRI/AndroidStudioProjects/User_YT/app/src/main/res/menu/side_navigation_resource_file.xml" value="0.31354166666666666" />
         <entry key="..\:/Users/SIRI/Desktop/ym/yummy tummy/app/src/main/res/layout/fragment_splash.xml" value="0.1921875" />
         <entry key="..\:/Users/SIRI/Desktop/ym/yummy tummy/app/src/main/res/menu/side_navigation_resource_file.xml" value="0.1921875" />
       </map>

@@ -26,13 +26,12 @@ import java.util.List;
 
 public class DashBoardActivity extends AppCompatActivity {
 
-    //  Variables declared the drawer layout
+
     private DrawerLayout mDrawer;
     private Toolbar toolbar;
     private NavigationView nvDrawer;
     public static List<LocationClass> locationClassList;
 
-    // Make sure to be using androidx.appcompat.app.ActionBarDrawerToggle version.
     private ActionBarDrawerToggle drawerToggle;
 
     @Override
@@ -40,7 +39,7 @@ public class DashBoardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dash_board);
 
-//      Setting up the custom toolbar for the drawer layout.
+//
 
         toolbar = (Toolbar) findViewById(R.id.customToolbar);
         setSupportActionBar(toolbar);
@@ -48,7 +47,7 @@ public class DashBoardActivity extends AppCompatActivity {
 
 
 
-        // This will display an Up icon (<-), we will replace it with hamburger later
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         mDrawer = (DrawerLayout) findViewById(R.id.drawer);
 //      Setting the up the drawer layout.
@@ -58,7 +57,7 @@ public class DashBoardActivity extends AppCompatActivity {
             Log.e("error","hello");
         }
 
-//        Getting the locationof all the resturants from te database
+
         FirebaseFirestore.getInstance().collection("ResturantLocations").get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
             @Override
             public void onSuccess(QuerySnapshot queryDocumentSnapshots) {

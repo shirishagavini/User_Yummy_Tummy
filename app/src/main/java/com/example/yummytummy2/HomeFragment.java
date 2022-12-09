@@ -41,7 +41,8 @@ public class HomeFragment extends BaseFragment {
     public static List<MenuItemClass> menuItems;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
         view = inflater.inflate(R.layout.fragment_home, container, false);
         currUserID = FirebaseAuth.getInstance().getCurrentUser().getUid();
         title = view.findViewById(R.id.resturantAvailable);
@@ -109,7 +110,7 @@ public class HomeFragment extends BaseFragment {
         profileImage = bottomView.findViewById(R.id.foodImageView);
 
         resturantName.setText(currResturant.getName());
-// getting the menu of the restaurant from the firebase
+
         FirebaseFirestore.getInstance()
                 .collection("Pincode")
                 .document(""+currResturant.pincode)
@@ -126,7 +127,7 @@ public class HomeFragment extends BaseFragment {
                         Log.e("manan",menuItems.toString());
 //                        casting the menuitem document into the menuitem class
                         LinearLayoutManager manager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
-//                        setting up the menu recyclerview for displaying the menu items in the bottom sheet
+
                         menuRecyclerView.setLayoutManager(manager);
                         menuRecyclerView.setHasFixedSize(true);
 //                        initialising the menu item adaptor
@@ -135,7 +136,7 @@ public class HomeFragment extends BaseFragment {
                     }
                 });
 
-//        setting up the add to cart button in the bottom sheet
+
         addToCart.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -154,7 +155,7 @@ public class HomeFragment extends BaseFragment {
         });
         bottomSheeet.setContentView(bottomView);
         bottomSheeet.show();
-//        setting up the functionality of the back button for closing the bottom sheet
+
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
